@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desafio formulário proposto como conclusão do módulo intermediário de JS.">
+    <meta name="author" content="Eder Henrique Santos">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <title>Desafio Formulário</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <script src="src/js/validacao.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <div class="informacao">
+                <h1 class="titulo">
+                    FICOU COM DÚVIDAS?<br>
+                    NOS MANDE UMA MENSAGEM!
+                </h1>
+                <p class="paragrafo">
+                    caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos
+                    de 24h.
+                </p>
+            </div>
+            <form method="GET" action="index.html" class="formulario" id="form">
+                <div class="item">
+                    <input class="nome" type="text" name="nome" id="nome" placeholder="Nome completo*">
+                    <label class="label" for="nome">campo obrigatório</label>
+                </div>
+                <div class="item">
+                    <input class="email" type="text" name="email" id="email" placeholder="Email*">
+                    <label class="label" for="email">campo obrigatório</label>
+                </div>
+                <div class="item">
+                    <input class="tel" type="number" name="telefone" id="tel" placeholder="Telefone*">
+                    <label class="label" for="tel">campo obrigatório</label>
+                </div>
+                <div class="item">
+                    <textarea class="texto-msg" name="texto" id="msg" cols="40" rows="10"
+                        placeholder="Mensagem*"></textarea>
+                    <label class="label" for="texto">campo obrigatório</label>
+                </div>
+                <p>*campos obrigatórios</p>
+                <input class="btn-enviar" id="btn-enviar" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
